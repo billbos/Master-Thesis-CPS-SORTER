@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<criteria xmlns="http://drivebuild.com"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://drivebuild.com drivebuild.xsd">
+    <author>Stefan Huber</author>
+    <version>1</version>
+    <name>{{ testName }}</name>
+    <environment>{{ dbe_file_name }}</environment>
+    <stepsPerSecond>{{ stepsPerSecond }}</stepsPerSecond>
+    <aiFrequency>{{ aiFrequency }}</aiFrequency>
+
+    <participants>
+        <participant id="ego" model="ETK800">
+            <initialState x="{{ initial_state.x }}" y="{{ initial_state.y }}" movementMode="{{ movementMode }}"
+                          orientation="{{ orientation }}"/>
+            <movement>
+                {% if waypoints is not defined %}
+                    {% set waypoints = lane %}
+                {% endif %}
+                {% for node in waypoints %}
+                    <waypoint x="{{ node.x }}" y="{{ node.y }}" movementMode="{{ movementMode }}" tolerance="1"/>
+                {% endfor %}
+            </movement>
+        </participant>
+    </participants>
+
+    <success>
+        <scPosition participant="ego" x="{{ goal.x }}" y="{{ goal.y }}" tolerance="{{ goal.width/2 }}"/>
+    </success>
+
+    <failure>
+        <or>
+            <scDamage participant="ego"/>
+            <scLane participant="ego" onLane="offroad"/>
+        </or>
+    </failure>
+</criteria>
