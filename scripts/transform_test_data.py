@@ -6,6 +6,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 import shutil
+import re
 
 class Point:
     def __init__(self,x_init,y_init):
@@ -43,7 +44,7 @@ class DataSetGenerator:
         1: 'safe'
     }
 
-    def __init__(self, output_folder='../datasets'):            
+    def __init__(self, output_folder='C:\workspace\Master Thesis\datasets'):            
         self.output_folder = output_folder
 
 
@@ -78,20 +79,20 @@ class DataSetGenerator:
         test_set.to_csv('{}/{}_{}_test_set.csv'.format(output_folder, split_ratio, file_name), index=False)
         return output_folder
 
-    def transform_to_test_data(self, directory, outputfile): 
+    def transform_to_test_data(self, directory, outputfile, ai_type='beamng'): 
         '''
         creates a csv file out of json files from beamng data
         '''
         file_pairs = self.search_files(directory)
         counter = 0
         # outputfile = '{}/{}'.format(self.output_folder, outputfile)
+        outputfile = '{}_{}'.format(ai_type, outputfile)
         with open(outputfile, 'w', newline='') as csv_file:
             fieldnames = ['distance', 'road_distance', 'num_l_turns','num_r_turns','num_straights','median_angle','total_angle','mean_angle','std_angle',
             'max_angle','min_angle','median_pivot_off','mean_pivot_off','std_pivot_off','max_pivot_off','min_pivot_off', 'safety']
             writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
             writer.writeheader()          
-
-            for filename, file_paths in file_pairs.items():
+            for filename, file_paths in file_pairs[ai_type].items():
                 with open(file_paths['exec_file']) as json_file:
                     try:
                         data = json.load(json_file)
@@ -107,20 +108,27 @@ class DataSetGenerator:
         return outputfile
 
     def min_max_normalize(self, dataset):
-        dataNorm=((dataset-dataset.min())/(dataset.max()-dataset.min()))*20
+        dataNorm=((dataset-dataset.min())/(dataset.max()-dataset.min()))
         dataNorm["safety"]=dataset["safety"]
         return dataNorm
 
     def search_files(self, folder):
-        file_pairs = {}
+        beamng_pattern = re.compile(r".*beamng.*")
+        deepdrive_pattern = re.compile(r".*deepdrive.*")
+        file_pairs = {
+            'beamng': {},
+            'deepdrive': {}
+        }
         for subdir, dirs, files in os.walk(directory):
             for filename in files:
                 splited_subdir = subdir.split('\\')
                 dir_name = splited_subdir[-1]
                 filepath = subdir + os.sep + filename
                 if dir_name in ['execs', 'tests', 'final']:
-                    file_pairs.setdefault('{}-{}'.format(splited_subdir[-3],filename), {}).update({'exec_file': filepath})
-
+                    if beamng_pattern.match(filepath):
+                        file_pairs['beamng'].setdefault('{}-{}'.format(splited_subdir[-3],filename), {}).update({'exec_file': filepath})
+                    elif deepdrive_pattern.match(filepath):
+                        file_pairs['deepdrive'].setdefault('{}-{}'.format(splited_subdir[-3],filename), {}).update({'exec_file': filepath})
         return file_pairs
 
 
@@ -222,7 +230,11 @@ if __name__ == '__main__':
     directory = 'D:/master thesis/DataSet'
     # print(sys.argv)
     data_set_generator = DataSetGenerator()
-    data_set = data_set_generator.transform_to_test_data(directory, sys.argv[1])
+    data_set = data_set_generator.transform_to_test_data(directory, sys.argv[1], 'deepdrive')
     new_dir = data_set_generator.create_training_test_set(data_set, float(sys.argv[2]))
     shutil.move(data_set, '{}/{}'.format(new_dir, sys.argv[1]))
+    data_set = data_set_generator.transform_to_test_data(directory, sys.argv[1], 'beamng')
+    new_dir = data_set_generator.create_training_test_set(data_set, float(sys.argv[2]))
+    shutil.move(data_set, '{}/{}'.format(new_dir, sys.argv[1]))
+    # data_set_generator.search_files(directory)
     # analyse_data_structure(directory)

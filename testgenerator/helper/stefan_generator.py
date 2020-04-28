@@ -124,3 +124,4 @@ class ReferenceTestGenerator:
 
         return [Path(temp_file.name) for temp_file in [temp_dbe_file, temp_dbc_file]]
 
+
