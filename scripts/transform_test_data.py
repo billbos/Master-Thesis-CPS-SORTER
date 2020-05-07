@@ -153,8 +153,11 @@ class DataSetGenerator:
             elif seg['roadtype'] == 'straight':
                 straight += 1
 
-            if seg['angle'] != 0:
-                angles.append(seg['angle'])
+            if seg['angle'] < 0:
+                seg['angles'] += 360
+
+            angles.append(seg['angle'])
+
             if seg['pivot_off'] != 0:
                 pivot_offs.append(seg['pivot_off'])
             
