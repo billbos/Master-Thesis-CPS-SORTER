@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.sample</groupId> <!-- Change it: your project or company-->
+    <artifactId>weka-sample</artifactId> <!-- Change it: your project name-->
+    <version>0.1-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source> <!-- For Java 11: use "11"-->
+        <maven.compiler.target>1.8</maven.compiler.target> <!-- For Java 11: use "11"-->
+
+        <weka.version>3.8.3</weka.version>
+        
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>nz.ac.waikato.cms.weka</groupId>
+            <artifactId>weka-stable</artifactId>
+            <version>${weka.version}</version>
+        </dependency>
+        
+        
+    </dependencies>
+    
+</project>
+
