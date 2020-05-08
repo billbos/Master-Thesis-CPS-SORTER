@@ -7,6 +7,10 @@ import pandas as pd
 import numpy as np
 import shutil
 import re
+from asfault.tests import RoadTest
+import os.path,subprocess
+import subprocess
+
 
 class Point:
     def __init__(self,x_init,y_init):
@@ -44,7 +48,7 @@ class DataSetGenerator:
         1: 'safe'
     }
 
-    def __init__(self, output_folder='C:\workspace\Master Thesis\datasets'):            
+    def __init__(self, output_folder='C:/workspace/MasterThesis/datasets'):            
         self.output_folder = output_folder
 
 
@@ -62,22 +66,29 @@ class DataSetGenerator:
         df_safe = df[is_safe]
         df_not_safe = df[not_safe]
         num_not_safe = int(len(df_not_safe) * split_ratio)
+        num_safe = int(len(df_safe) * split_ratio)
+        if num_safe >= num_not_safe:
+            num_sample = num_not_safe
+        else:
+            num_sample = num_safe
 
-        sample_safe = df_safe.sample(n=num_not_safe, random_state=1)
-        sample_unsafe = df_not_safe.sample(n=num_not_safe, random_state=1)
+        sample_safe = df_safe.sample(n=num_sample, random_state=1)
+        sample_unsafe = df_not_safe.sample(n=num_sample, random_state=1)
 
         training_set = pd.concat([sample_safe, sample_unsafe])
         test_set = df.drop(training_set.index)
 
-        training_set = self.min_max_normalize(training_set)
-        test_set = self.min_max_normalize(test_set)
+        # training_set = self.min_max_normalize(training_set)
+        # test_set = self.min_max_normalize(test_set)
 
         training_set['safety'] = training_set['safety'].map(self.reverse_label_map)
         test_set['safety'] = test_set['safety'].map(self.reverse_label_map)
 
-        training_set.to_csv('{}/{}_{}_training_set.csv'.format(output_folder, split_ratio, file_name), index=False)
-        test_set.to_csv('{}/{}_{}_test_set.csv'.format(output_folder, split_ratio, file_name), index=False)
-        return output_folder
+        training_path = '{}/{}_{}_training_set.csv'.format(output_folder, split_ratio, file_name)
+        test_path = '{}/{}_{}_test_set.csv'.format(output_folder, split_ratio, file_name)
+        training_set.to_csv(training_path, index=False)
+        test_set.to_csv(test_path, index=False)
+        return output_folder, training_path, test_path
 
     def transform_to_test_data(self, directory, outputfile, ai_type='beamng'): 
         '''
@@ -124,11 +135,11 @@ class DataSetGenerator:
                 splited_subdir = subdir.split('\\')
                 dir_name = splited_subdir[-1]
                 filepath = subdir + os.sep + filename
-                if dir_name in ['execs', 'tests', 'final']:
-                    if beamng_pattern.match(filepath):
-                        file_pairs['beamng'].setdefault('{}-{}'.format(splited_subdir[-3],filename), {}).update({'exec_file': filepath})
-                    elif deepdrive_pattern.match(filepath):
-                        file_pairs['deepdrive'].setdefault('{}-{}'.format(splited_subdir[-3],filename), {}).update({'exec_file': filepath})
+                # if dir_name in ['execs', 'tests', 'final']:
+                if beamng_pattern.match(filepath):
+                    file_pairs['beamng'].setdefault('{}-{}'.format(splited_subdir[-1],filename), {}).update({'exec_file': filepath})
+                elif deepdrive_pattern.match(filepath):
+                    file_pairs['deepdrive'].setdefault('{}-{}'.format(splited_subdir[-1],filename), {}).update({'exec_file': filepath})
         return file_pairs
 
 
@@ -143,6 +154,8 @@ class DataSetGenerator:
         r_turns = 0
         straight = 0
         road_distance = 0
+        road_test = RoadTest.from_dict(data)
+        dis = RoadTest.get_suite_coverage([road_test], 2)
         for seg_id, seg in data['network']['nodes'].items():
             if not int(seg_id) in data['path']:
                 continue
@@ -154,7 +167,7 @@ class DataSetGenerator:
                 straight += 1
 
             if seg['angle'] < 0:
-                seg['angles'] += 360
+                seg['angle'] += 360
 
             angles.append(seg['angle'])
 
@@ -169,7 +182,8 @@ class DataSetGenerator:
         max_distance = data['execution']['maximum_distance']
         avg_distance = data['execution']['average_distance']
 
-        if data['execution']['oobs'] > 0 and max_distance >= 3:
+        # if data['execution']['oobs'] > 0 and max_distance >= 3:
+        if data['execution']['oobs'] > 0:
             safety = 'unsafe'
         else:
             safety = 'safe'
@@ -229,15 +243,16 @@ class DataSetGenerator:
         return counter_not_execution, counter_execution
 
 
+
 if __name__ == '__main__':
-    directory = 'D:/master thesis/DataSet'
-    # print(sys.argv)
+    directory = 'D:/master thesis/DataSet/execs/beamng_risk_1_5'
     data_set_generator = DataSetGenerator()
-    data_set = data_set_generator.transform_to_test_data(directory, sys.argv[1], 'deepdrive')
-    new_dir = data_set_generator.create_training_test_set(data_set, float(sys.argv[2]))
-    shutil.move(data_set, '{}/{}'.format(new_dir, sys.argv[1]))
+    # data_set = data_set_generator.transform_to_test_data(directory, sys.argv[1], 'deepdrive')
+    # new_dir = data_set_generator.create_training_test_set(data_set, float(sys.argv[2]))
+    # shutil.move(data_set, '{}/{}'.format(new_dir, sys.argv[1]))
     data_set = data_set_generator.transform_to_test_data(directory, sys.argv[1], 'beamng')
-    new_dir = data_set_generator.create_training_test_set(data_set, float(sys.argv[2]))
+    new_dir, training_set, test_set = data_set_generator.create_training_test_set(data_set, float(sys.argv[2]))
     shutil.move(data_set, '{}/{}'.format(new_dir, sys.argv[1]))
-    # data_set_generator.search_files(directory)
-    # analyse_data_structure(directory)
+    result_path ='C:/workspace/MasterThesis/datasets/test.csv'
+    subprocess.call(['java', '-jar', './jars/test.jar', training_set, test_set, sys.argv[1], result_path])
+    subprocess.call(['java', '-jar', './jars/test.jar', 'training_set', 'test_set', 'sys.argv[1]', 'result_path'])

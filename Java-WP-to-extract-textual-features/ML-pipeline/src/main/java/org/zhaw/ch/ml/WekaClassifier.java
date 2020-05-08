@@ -61,6 +61,8 @@ public class WekaClassifier extends MachineLearningClassifier {
 			row.add(String.valueOf(evalt.precision(1)));
 			row.add(String.valueOf(evalt.recall(0)));
 			row.add(String.valueOf(evalt.recall(1)));
+			row.add(String.valueOf(evalt.correct()));
+			row.add(String.valueOf(evalt.incorrect()));
 			results.add(row.toString());
 
 		} catch (Exception e) {
@@ -103,6 +105,7 @@ public class WekaClassifier extends MachineLearningClassifier {
 		System.out.println(args[0]);
 		System.out.println(args[1]);
 		System.out.println(args[2]);
+		System.out.println(args[3]);
 
 		WekaClassifier wekaClassifier = new WekaClassifier();
 		System.out.println("ClassifierToolChain: "+wekaClassifier.getClassifierToolChain());
@@ -114,7 +117,6 @@ public class WekaClassifier extends MachineLearningClassifier {
 		System.out.println("result: "+results);
 		wekaClassifier.writeResultTo(args[3], results);
 		System.out.println("output: "+args[3]);
-
 	}
 	
 }

@@ -12,17 +12,17 @@ public class TermByDocumentCreation {
 		// TODO Auto-generated method stub
 
 		//local path to the R script "MainScript.r"
-		String pathRScript = "/Users/panc/Desktop/Zurich-applied-Science/Collaborations/UZH/master-students/Bill-bosshard/ECLIPSE/workspace/ML-pipeline/R-resources/R-scripts/MainScript.r";
+		String pathRScript = "D:/java-workspace/ML-pipeline/R-resources/R-scripts/MainScript.r";
 	
 		// here are located the "documents" folder and the  "utilities.R script"
-		String docs_location = "/Users/panc/Desktop/Zurich-applied-Science/Collaborations/UZH/master-students/Bill-bosshard/ECLIPSE/workspace/ML-pipeline/R-resources/R-scripts/";
+		String docs_location = "D:/java-workspace/ML-pipeline/R-resources/R-scripts/";
 
 		// locations of training and test sets
-		String documentsTrainingSet = "/Users/panc/Desktop/Zurich-applied-Science/Collaborations/UZH/master-students/Bill-bosshard/ECLIPSE/workspace/ML-pipeline/R-resources/R-scripts/documents/1-use_cases";
-		String documentsTestSet = "/Users/panc/Desktop/Zurich-applied-Science/Collaborations/UZH/master-students/Bill-bosshard/ECLIPSE/workspace/ML-pipeline/R-resources/R-scripts/documents/4-class_description";
+		String documentsTrainingSet = "D:/java-workspace/ML-pipeline/R-resources/R-scripts/documents/1-use_cases";
+		String documentsTestSet = "D:/java-workspace/ML-pipeline/R-resources/R-scripts/documents/4-class_description";
 		
 		//command to execute
-		String command = "/usr/local/bin/Rscript "+ pathRScript+" "+docs_location+ " "+documentsTrainingSet+ " "+documentsTestSet+" ";// path of command "/usr/local/bin/Rscript" identified using: "which Rscript" from command line
+		String command = "D:/Programs/R/R-3.6.3/bin/Rscript "+ pathRScript+" "+docs_location+ " "+documentsTrainingSet+ " "+documentsTestSet+" ";// path of command "/usr/local/bin/Rscript" identified using: "which Rscript" from command line
 		
 		//we print the command to execute
 		System.out.println(" \n \n Executing command (considering R script and arguments): \n "+command+" \n");

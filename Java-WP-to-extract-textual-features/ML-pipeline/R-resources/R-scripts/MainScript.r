@@ -23,7 +23,7 @@ library(stringr)
 library(stopwords)
 library(slam)
 
-base_folder <- "~/Desktop/Zurich-applied-Science/Collaborations/UZH/master-students/Bill-bosshard/ECLIPSE/workspace/ML-pipeline/R-resources/R-scripts"   
+base_folder <- "D:/java-workspace/ML-pipeline/R-resources/R-scripts"   
 
 if(!is.na(base_folder2))
 {

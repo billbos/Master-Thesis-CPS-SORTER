@@ -1,3 +1,11 @@
+from dataclasses import dataclass
+from tkinter import Canvas
+from typing import Tuple, List
+from xml.dom import minidom
+from xml.etree import ElementTree
+from drivebuildclient import static_vars
+from generateDiagramData import Generator
+
 @static_vars(scale=2, size=1000, origin_size=8)
 def _generate_road_overlay(move_to_origin: bool = False, only_traveled_distance: bool = False) -> None:
     from tkinter import Tk, mainloop

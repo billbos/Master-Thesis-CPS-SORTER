@@ -51,7 +51,7 @@
 "Patient history made by the doctor"
 "Diagnostic tests prescribed therapy"
 "Giving medicines and time of recruitment"
-"They are required altres fd reported values"
+"They are required altresý reported values"
 "Any observations made instrumental"
 "During the visit eg heartbeat"
 "Blood pressure values of n number of"

@@ -1,0 +1,48 @@
+Classifier,DataSet,Training Prediction,Test Predictions,Safe Precision,Unsafe Presicion,Safe Recall,Unsafe Recall,NumCorrect,NumIncorrect
+,,,,,,,,,
+class weka.classifiers.trees.J48,safe_unsafe_beam_ng_0.8_1_5_risk,90.04914005,63.27586207,0.838174274,0.486725664,0.537234043,0.808823529,367,213
+class weka.classifiers.bayes.NaiveBayes,safe_unsafe_beam_ng_0.8_1_5_risk,67.56756757,61.37931034,0.868932039,0.473262032,0.47606383,0.867647059,356,224
+class weka.classifiers.functions.Logistic,safe_unsafe_beam_ng_0.8_1_5_risk,72.23587224,63.79310345,0.880733945,0.491712707,0.510638298,0.87254902,370,210
+,,,,,,,,,
+class weka.classifiers.trees.J48,safe_unsafe_beam_ng_0.8_1_risk,84.53815261,57.64705882,0.938666667,0.131147541,0.570502431,0.634920635,392,288
+class weka.classifiers.bayes.NaiveBayes,safe_unsafe_beam_ng_0.8_1_risk,68.87550201,37.79411765,0.970873786,0.120253165,0.324149109,0.904761905,257,423
+class weka.classifiers.functions.Logistic,safe_unsafe_beam_ng_0.8_1_risk,73.09236948,65.88235294,0.959427208,0.176245211,0.651539708,0.73015873,448,232
+,,,,,,,,,
+class weka.classifiers.trees.J48,safe_unsafe_beam_ng_0.8_2_risk,94.91525424,26.13283675,0.96559633,0,0.263784461,0,421,1190
+class weka.classifiers.bayes.NaiveBayes,safe_unsafe_beam_ng_0.8_2_risk,87.28813559,18.80819367,0.952830189,0,0.189849624,0,303,1308
+class weka.classifiers.functions.Logistic,safe_unsafe_beam_ng_0.8_2_risk,91.52542373,24.89137182,0.968446602,0.001668057,0.25,0.133333333,401,1210
+,,,,,,,,,
+,,,,,,,,,
+class weka.classifiers.trees.J48,safe_unsafe_not_normalized_beam_ng_0.8_1_5_risk,90.04914005,65.51724138,0.77672956,0.507633588,0.656914894,0.651960784,380,200
+class weka.classifiers.bayes.NaiveBayes,safe_unsafe_not_normalized_beam_ng_0.8_1_5_risk,68.18181818,63.10344828,0.864864865,0.48603352,0.510638298,0.852941176,366,214
+class weka.classifiers.functions.Logistic,safe_unsafe_not_normalized_beam_ng_0.8_1_5_risk,72.23587224,68.27586207,0.826530612,0.534965035,0.646276596,0.75,396,184
+,,,,,,,,,
+,,,,,,,,,
+class weka.classifiers.trees.J48,safe_unsafe_not_normalized_beam_ng_0.8_1_risk,84.53815261,55.73529412,0.970238095,0.154069767,0.528363047,0.841269841,379,301
+class weka.classifiers.bayes.NaiveBayes,safe_unsafe_not_normalized_beam_ng_0.8_1_risk,69.87951807,53.97058824,0.984076433,0.158469945,0.500810373,0.920634921,367,313
+class weka.classifiers.functions.Logistic,safe_unsafe_not_normalized_beam_ng_0.8_1_risk,73.09236948,60.29411765,0.983286908,0.177570093,0.572123177,0.904761905,410,270
+,,,,,,,,,
+,,,,,,,,,
+naiv bayes,simple_oob_0.5,"0,65","0,59","0,91","0,19","0,59","0,63",,
+logistic,simple_oob_0.5,"0,67","0,67","0,9","0,2","0,69","0,5",,
+j48,simple_oob_0.5,"0,87","0,62","0,94","0,27","0,6","0,75",,
+,,,,,,,,,
+naiv bayes,simple_oob_distance_3_0.5,"0,7","0,67","0,92","0,19","0,68","0,57",,
+logistic,simple_oob_distance_3_0.5,"0,9","0,52","0,51","0,04","0,96","0,09",,
+j48,simple_oob_distance_3_0.5,"0,9","0,5","0,5",-,1,0,,
+,,,,,,,,,
+naiv bayes,min_max_normalized_oob_distance_3_0.5,"0,7","0,5","0,91","0,14","0,48","0,65",,
+logistic,min_max_normalized_oob_distance_3_0.5,"0,91","0,62","0,9","0,14","0,64","0,44",,
+j48,min_max_normalized_oob_distance_3_0.5,"0,91","0,31","0,95","0,13","0,27","0,91",,
+,,,,,,,,,
+naiv bayes,min_max_normalized_oob_distance_3_0.8,"0,72","0,82","0,96","0,14","0,86","0,4",,
+logistic,min_max_normalized_oob_distance_3_0.8,"0,75","0,85","0,95","0,1","0,89","0,2",,
+j48,min_max_normalized_oob_distance_3_0.8,"0,91","0,41","0,96","0,06","0,39","0,7",,
+,,,,,,,,,
+naiv bayes,simple_oob_distance_3_0.8,"0,63","0,65","0,98","0,11","0,64","0,8",,
+logistic,simple_oob_distance_3_0.8,"0,76","0,63","0,96","0,09","0,64","0,6",,
+j48,simple_oob_distance_3_0.8,"0,89","0,47","0,97","0,08","0,45","0,8",,
+,,,,,,,,,
+naiv bayes,simple_oob_0.8,"0,65","0,65","0,67","0,64","0,61","0,69",,
+logistic,simple_oob_0.8,"0,67","0,67","0,9","0,2","0,69","0,5",,
+j48,simpe_oob_0.8,"0,87","0,61","0,94","0,22","0,6","0,75",,
