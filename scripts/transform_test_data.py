@@ -1,14 +1,14 @@
 import os
-import csv
-import json
-import sys
-from pathlib import Path
-import pandas as pd
-import numpy as np
-import shutil
-import re
-from asfault.tests import RoadTest
-import os.path,subprocess
+# import csv
+# import json
+# import sys
+# from pathlib import Path
+# import pandas as pd
+# import numpy as np
+# import shutil
+# import re
+# from asfault.tests import RoadTest
+# import os.path
 import subprocess
 
 
@@ -90,7 +90,7 @@ class DataSetGenerator:
         test_set.to_csv(test_path, index=False)
         return output_folder, training_path, test_path
 
-    def transform_to_test_data(self, directory, outputfile, ai_type='beamng'): 
+    def transform_to_test_data(self, directory, outputfile, ai_type='beamng', stop_at_last_oob=False): 
         '''
         creates a csv file out of json files from beamng data
         '''
@@ -109,7 +109,7 @@ class DataSetGenerator:
                         data = json.load(json_file)
                         if not 'execution' in data.keys():
                             continue
-                        test_data = self.extract_test_data(data)
+                        test_data = self.extract_test_data(data, stop_at_last_oob)
                         print('file: {}'.format(counter))
                         counter += 1
                         writer.writerow(test_data)
@@ -143,9 +143,10 @@ class DataSetGenerator:
         return file_pairs
 
 
-    def extract_test_data(self, data):
+    def extract_test_data(self, data, stop_at_last_oob=False):
         angles = []
         path = data['path']
+        path_used = []
         direct_distance = self.get_distance(Point(data['start'][0], data['start'][1]), Point(data['goal'][0], data['goal'][1]))
         road_distance = 0
         pivot_offs = []
@@ -154,6 +155,7 @@ class DataSetGenerator:
         r_turns = 0
         straight = 0
         road_distance = 0
+        num_oobs = data['oobs']
         road_test = RoadTest.from_dict(data)
         dis = RoadTest.get_suite_coverage([road_test], 2)
         for seg_id, seg in data['network']['nodes'].items():
@@ -175,9 +177,16 @@ class DataSetGenerator:
                 pivot_offs.append(seg['pivot_off'])
             
             points[seg_id] = Point(seg['x'], seg['y'])
+            path_used.append(seg_id)
+            
+            if seg in data[seg_id].keys(): #fix is seg in oob
+                num_oobs += -1
+            
+            if num_oobs == 0 and stop_at_last_oob:
+                break
 
-        for i in range(0, len(path)-1):
-            road_distance += self.get_distance(points[str(path[i])], points[str(path[i+1])])
+        for i in range(0, len(path_used)-1):
+            road_distance += self.get_distance(points[str(path_used[i])], points[str(path_used[i+1])])
 
         max_distance = data['execution']['maximum_distance']
         avg_distance = data['execution']['average_distance']
@@ -243,16 +252,84 @@ class DataSetGenerator:
         return counter_not_execution, counter_execution
 
 
+    def transform_to_row_data(self, directory, outputfile, ai_type='beamng'): 
+        '''
+        creates a csv file out of json files from beamng data
+        '''
+        file_pairs = self.search_files(directory)
+        counter = 0
+        # outputfile = '{}/{}'.format(self.output_folder, outputfile)
+        outputfile = '{}_{}'.format(ai_type, outputfile)
+        with open(outputfile, 'w', newline='') as csv_file:
+            fieldnames = ['distance', 'road_distance', 'num_l_turns','num_r_turns','num_straights','median_angle','total_angle','mean_angle','std_angle',
+            'max_angle','min_angle','median_pivot_off','mean_pivot_off','std_pivot_off','max_pivot_off','min_pivot_off', 'safety']
+            writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+            writer.writeheader()          
+            for filename, file_paths in file_pairs[ai_type].items():
+                with open(file_paths['exec_file']) as json_file:
+                    try:
+                        data = json.load(json_file)
+                        if not 'execution' in data.keys():
+                            continue
+                        rows = self.extract_segment_features_rows(data)
+                        print('file: {}'.format(counter))
+                        counter += 1
+                        for row in rows:
+                            writer.writerow(row)
+                    except Exception as e:
+                        print(e)
+            
+        return outputfile
+
+
+    def extract_segment_features_rows(self, data):
+        rows = []
+        num_oobs = data['oobs']
+        path = data['path']
+        stop_at_last_oob = True
+        if data['reaons'] == 'goal_reached':
+            stop_at_last_oob = False
+
+        for i in rang(0, len(path)):
+           
+            row = {
+                'is_start_seg': False,
+                'is_last_seg': False,
+            }
+            seg_id = path[i]
+            seg = data['network']['nodes'][i]
+            prev_seg = next_seg = None
+            if i == 0:
+                row['is_start_seg'] = True
+            else:
+                prev_seg = data['network']['nodes'][i-1]
+            if i == len(path)-1:
+                row['is_last_seg'] = True
+            else:
+                next_seg = data['network']['nodes'][i+1]
+            row.update(self.segment_to_feature(seg, prev_seg, next_seg))
+            if seg in data[seg_id].keys(): #fix is seg in oob
+                row['safety'] = 'unsafe'
+                num_oobs += -1
+            else:
+                row['safety'] = 'safe'
+            if num_oobs == 0 and stop_at_last_oob:
+                break    
+        return rows
+
+    def segment_to_feature(self,segment, prev_seg=None, next_seg=None):
+        pass
 
 if __name__ == '__main__':
     directory = 'D:/master thesis/DataSet/execs/beamng_risk_1_5'
     data_set_generator = DataSetGenerator()
-    # data_set = data_set_generator.transform_to_test_data(directory, sys.argv[1], 'deepdrive')
-    # new_dir = data_set_generator.create_training_test_set(data_set, float(sys.argv[2]))
-    # shutil.move(data_set, '{}/{}'.format(new_dir, sys.argv[1]))
+    # # data_set = data_set_generator.transform_to_test_data(directory, sys.argv[1], 'deepdrive')
+    # # new_dir = data_set_generator.create_training_test_set(data_set, float(sys.argv[2]))
+    # # shutil.move(data_set, '{}/{}'.format(new_dir, sys.argv[1]))
     data_set = data_set_generator.transform_to_test_data(directory, sys.argv[1], 'beamng')
     new_dir, training_set, test_set = data_set_generator.create_training_test_set(data_set, float(sys.argv[2]))
     shutil.move(data_set, '{}/{}'.format(new_dir, sys.argv[1]))
-    result_path ='C:/workspace/MasterThesis/datasets/test.csv'
-    subprocess.call(['java', '-jar', './jars/test.jar', training_set, test_set, sys.argv[1], result_path])
-    subprocess.call(['java', '-jar', './jars/test.jar', 'training_set', 'test_set', 'sys.argv[1]', 'result_path'])
+    # result_path ='C:/workspace/MasterThesis/datasets/test.csv'
+    # subprocess.call(['java', '-jar', './jars/test.jar', training_set, test_set, sys.argv[1], result_path])
+    print(os.path.exists('./test.jar'))
+    subprocess.call(['java', '-jar', './jars/test.jar', training_set, test_set, 'aaaa', 'df'])
