@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<criteria xmlns="http://drivebuild.com"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://drivebuild.com drivebuild.xsd">
+    <author>Stefan Huber</author>
+    <version>1</version>
+    <name>Test</name>
+    <environment>tmpi1be70fv.dbe.xml</environment>
+    <stepsPerSecond>10</stepsPerSecond>
+    <aiFrequency>5</aiFrequency>
+
+    <participants>
+        <participant id="ego" model="ETK800">
+            <initialState x="-1.5004336851455562" y="-102.5696932462303" movementMode="_BEAMNG"
+                          orientation="88.04"/>
+            <movement>
+                
+                    
+                
+                
+                    <waypoint x="-3.584566378277498" y="-105.0" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="-3.243377865798998" y="-95.00582217493842" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="-2.1048855093232746" y="-80.39399418281523" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="0.3027792615703375" y="-65.93699475457474" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="3.9612926641876007" y="-51.74485038524077" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="8.842811202463807" y="-37.92557186291501" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="14.910183572781193" y="-24.584332241460885" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="22.117233407822038" y="-11.822666410058389" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="30.409110706606015" y="0.26230164861097194" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="39.72270927611697" y="11.578598030517526" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="49.98714700753635" y="22.040098887228396" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="61.1243053318911" y="31.567185880397076" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="73.0494237495328" y="40.08735212539317" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="85.67174490871989" y="47.535754012475124" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="98.89520532386497" y="53.85570470581435" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="112.61916647666514" y="58.999105564543854" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="126.73918073599327" y="62.92681220245849" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="141.14778626743814" y="65.60893240042948" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="155.73532488275163" y="67.02505360424188" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+                    <waypoint x="170.39077660487447" y="67.16439827645733" movementMode="AUTONOMOUS" tolerance="1"/>
+                
+            </movement>
+        </participant>
+    </participants>
+
+    <success>
+        <scPosition participant="ego" x="170.39077660487447" y="67.16439827645733" tolerance="4.0"/>
+    </success>
+
+    <failure>
+        <or>
+            <scDamage participant="ego"/>
+            <scLane participant="ego" onLane="offroad"/>
+        </or>
+    </failure>
+</criteria>

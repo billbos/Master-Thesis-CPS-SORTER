@@ -23,7 +23,7 @@ library(stringr)
 library(stopwords)
 library(slam)
 
-base_folder <- "D:/java-workspace/ML-pipeline/R-resources/R-scripts"   
+base_folder <- "C:/workspace/MasterThesis/Java-WP-to-extract-textual-features/ML-pipeline/R-resources/R-scripts"   
 
 if(!is.na(base_folder2))
 {
@@ -35,8 +35,8 @@ setwd(base_folder)
 
 source("./utilities.R")
 #path software artifacts
-trainingSetDirectory <- "./documents/1-use_cases"
-testSetDirectory <- "./documents/4-class_description"
+trainingSetDirectory <- "./documents/training"
+testSetDirectory <- "./documents/test"
 
 
 if(!is.na(trainingSetDirectory2) && !is.na(testSetDirectory2) )
@@ -100,6 +100,10 @@ temp2<- rep("",length(tdm_full_testSet_with_oracle_info[,1]))
 
 tdm_full_trainingSet_with_oracle_info<- cbind(tdm_full_trainingSet_with_oracle_info,temp1)
 tdm_full_testSet_with_oracle_info<- cbind(tdm_full_testSet_with_oracle_info,temp2)
+
+colnames(tdm_full_trainingSet_with_oracle_info)[length(tdm_full_trainingSet_with_oracle_info[1,])] <- "safety"
+colnames(tdm_full_testSet_with_oracle_info)[length(tdm_full_testSet_with_oracle_info[1,])] <- "safety"
+
 
 print("WRITING the CSV files (uuseful for WEKA) of training and test sets with the oracle information")
 write.csv(tdm_full_trainingSet_with_oracle_info,tdm_full_trainingSet_with_oracle_info_path)
