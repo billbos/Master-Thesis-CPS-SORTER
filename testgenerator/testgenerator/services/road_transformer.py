@@ -5,6 +5,7 @@ import tempfile
 import csv
 import json
 import os
+from asfault.tests import RoadTest
 
 class RoadTransformer:
 
@@ -36,6 +37,35 @@ class RoadTransformer:
 
         return to_test.name
 
+
+    def convert_to_test_bulk(self, tests, exclude_features=[]):
+        to_test = tempfile.NamedTemporaryFile(delete=False)
+        fieldnames = ['direct_distance', 'road_distance', 'num_l_turns','num_r_turns','num_straights','median_angle','total_angle','mean_angle','std_angle',
+        'max_angle','min_angle','median_pivot_off','mean_pivot_off','std_pivot_off','max_pivot_off','min_pivot_off', 'safety']
+        for feature in exclude_features:
+            fieldnames.pop(feature, None)
+
+        with open(to_test.name, 'w', newline='') as csv_file:
+            writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+            writer.writeheader()
+            counter = 0
+            for test in tests:       
+                features = self.extract_features_for_test_case(RoadTest.to_dict(test), False, exclude_features)
+                if len(tests) == 1:
+                    features['safety'] = 'safe'
+                    writer.writerow(features)
+                    features['safety'] = 'unsafe'
+                    writer.writerow(features)
+                else:
+                    if counter % 2 == 1:
+                        features['safety'] = 'safe'
+                        writer.writerow(features)
+                    else:
+                        features['safety'] = 'unsafe'
+                        writer.writerow(features)
+                    counter += 1
+
+        return to_test.name
     # def extract_features_for_test_case(self, data, exclude_features=[]):
     #     features = self.extract_features(data)
     #     for f in exclude_features:
@@ -48,8 +78,8 @@ class RoadTransformer:
         try:
             if is_file:
                 with open(test) as json_file:
-                    data = json.load(json_file)
-            features = self.extract_features(data)
+                    test = json.load(json_file)
+            features = self.extract_features(test)
             for f in exclude_features:
                 features.pop(f, None)        
             return features
@@ -154,6 +184,32 @@ class RoadTransformer:
             
         return outputfile
 
+    def transform_tests_to_training_data(self, tests, outputfile, with_header=False): 
+        '''
+        creates a csv file out of json files from beamng data
+        '''
+        if with_header:
+            mode = 'w'
+        else:
+            mode = 'a+'
+        with open(outputfile, mode, newline='') as csv_file:
+
+            fieldnames = ['direct_distance', 'road_distance', 'num_l_turns','num_r_turns','num_straights','median_angle','total_angle','mean_angle','std_angle',
+            'max_angle','min_angle','median_pivot_off','mean_pivot_off','std_pivot_off','max_pivot_off','min_pivot_off', 'safety']
+            writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+            if with_header:
+                writer.writeheader()
+
+            for test in tests:
+                test = RoadTest.to_dict(test)
+                features = self.extract_features(test)
+                if test['execution']['oobs'] > 0:
+                    features['safety'] = 'unsafe'
+                else:
+                    features['safety'] = 'safe'
+                writer.writerow(features)
+                  
+        return outputfile
 
     def extract_test_data(self, data):
         angles = []

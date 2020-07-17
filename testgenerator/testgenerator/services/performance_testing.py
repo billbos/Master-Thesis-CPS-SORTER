@@ -28,7 +28,7 @@ class PerformanceTester:
             avg_results['results'].append(result)
             for key, value in result.items():
                 avg_results.setdefault('avg_{}'.format(key), 0)
-                avg_results['avg_{}'.format(key)] += value
+                avg_results['avg_{}'.format(key)] += value / len(results)
         return avg_results
 
     def get_random_baseline_fixed_test_num(self, test_set, num_tests, rounds):
@@ -285,7 +285,7 @@ def split_data(safe_dir, unsafe_dir, out_dir, train_test_ratio, unsafe_ratio):
         num_unsafe_sample = int(num_safe_sample / (1-unsafe_ratio) * unsafe_ratio)
     if num_unsafe_sample > len(unsafe_files):
         num_unsafe_sample = len(unsafe_sample)
-        num_safe_sample  = int(num_unsafe_sample / unsafe_ratio) * (1-unsafe_ratio)
+        num_safe_sample  = int(num_unsafe_sample / unsafe_ratio * (1-unsafe_ratio))
     safe_test = random.sample(safe_files,num_safe_sample)
     unsafe_test = random.sample(unsafe_files,num_unsafe_sample)
     test_set = safe_test + unsafe_test
@@ -329,7 +329,7 @@ if __name__ == '__main__':
     output = 'D:/MasterThesis/Results/Performance/Offline'
     road_transformer = RoadTransformer()
     with tempfile.TemporaryDirectory() as temp_dir:
-        training_dir, test_dir = split_data(safe_dir, unsafe_dir, temp_dir, 0.8, 0.2)
+        training_dir, test_dir = split_data(safe_dir, unsafe_dir, temp_dir, 0.8, 0.45)
         
         weka_helper = WekaHelper()
         data_file = '{}/{}'.format(temp_dir, 'data_set.csv')
@@ -341,13 +341,14 @@ if __name__ == '__main__':
         
         result = {}
         tests = ['{}/{}'.format(test_dir, f) for f in os.listdir(test_dir) if os.path.isfile(os.path.join(test_dir, f))]
-        result['random_fix'] = tester.get_random_baseline_fixed_test_num(test_set=tests, num_tests=2, rounds=2)
-        result['random_reach'] = tester.get_random_baseline_reach_unsafe_num(test_set=tests, num_unsafe=2, rounds=2)
-        print(result)
+        result['random_fix'] = tester.get_random_baseline_fixed_test_num(test_set=tests, num_tests=10, rounds=30)
+        result['random_reach'] = tester.get_random_baseline_reach_unsafe_num(test_set=tests, num_unsafe=10, rounds=30)
+        # print(result)
        
         models = weka_helper.get_models()
-        result['model_fix'] = tester.model_based_fixed_baseline(tests, num_tests=2, rounds=2, models=models)
-        result['model_reach'] = tester.get_model_baseline_reach_unsafe_num(tests, num_unsafe=2, rounds=2, models=models)
-        with open('{}/test.json'.format(output), 'w') as outfile:
+        result['model_fix'] = tester.model_based_fixed_baseline(tests, num_tests=10, rounds=30, models=models)
+        result['model_reach'] = tester.get_model_baseline_reach_unsafe_num(tests, num_unsafe=10, rounds=30, models=models)
+        with open('{}/30_rounds_10_tests_ratio0_45.json'.format(output), 'w') as outfile:
             outfile.write(json.dumps(result, sort_keys=True, indent=4))
-        return output
+    print('{}/30_rounds_10_tests_ratio0_45.json'.format(output))
+   

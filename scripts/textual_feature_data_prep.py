@@ -5,6 +5,7 @@ from os.path import isfile, join
 import pandas as pd
 from shutil import copyfile
 import random
+from asfault.tests import RoadTest
 
 
 def main(directory, output):
@@ -118,8 +119,9 @@ def remove_timeout(folder):
     print('counter:::: {}'.format(counter))
 
 def count_safe_unsafe(folder):
-    result = {'unsafe':0, 'safe':0}
+    result = {'unsafe':0, 'safe':0, 'time_spent_unsafe':0, 'time_spent_safe':0}
     for subdir, dirs, files in os.walk(folder):
+        counter = 0
         for c, filename in enumerate(files):
             is_timeout = False
             splited_subdir = subdir.split('\\')
@@ -128,16 +130,23 @@ def count_safe_unsafe(folder):
             with open(filepath) as json_file:
                 try:
                     data = json.load(json_file)
-                    execution = data.pop('execution', {})
-                    if execution['reason'] == 'timeout':
+                    # print(data)
+                    if not data.get('execution', None):
                         continue
-                    if execution['oobs'] > 0:
+                    test = RoadTest.from_dict(data)
+                    execution = test.execution
+                    if execution.reason == 'timeout':
+                        continue
+                    if execution.oobs > 0:
                         result['unsafe'] += 1
+                        result['time_spent_unsafe'] += (execution.end_time - execution.start_time).total_seconds()
                     else:
                         result['safe'] += 1
-                
+                        result['time_spent_safe'] += (execution.end_time - execution.start_time).total_seconds()
                 except Exception as e:
                     print(e)
+            print(counter)
+            counter += 1
     return result
 
 def add_oracle(file):
@@ -168,8 +177,7 @@ if __name__ == '__main__':
     # potential_rerun_folder = 'D:/MasterThesis/Dataset/potential_rerun'
     # check_replay(replay_folder, potential_rerun_folder)
     # remove_timeout(replay_folder)
-    create_training_test_set(directory, output)
-    # files_test = 'D:/MasterThesis/Dataset/6h_run'
-
-    # result = count_safe_unsafe(files_test)
-    # print(result)
+    # create_training_test_set(directory, output)
+    directory_to_count = 'D:/MasterThesis/Results/Performance/Online/6h_logistic'
+    result = count_safe_unsafe(directory_to_count)
+    print(result)
