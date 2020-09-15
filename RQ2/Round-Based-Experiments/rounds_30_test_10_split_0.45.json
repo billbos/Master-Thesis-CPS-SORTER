@@ -1,0 +1,2192 @@
+{
+    "model_fix": {
+        "J48.model": {
+            "avg_cost_from_safe_file": 185.24932956666666,
+            "avg_num_missed_safe_tests": 8.933333333333334,
+            "avg_num_missed_unsafe_tests": 4.333333333333333,
+            "avg_num_safe_file_tested": 3.4666666666666672,
+            "avg_num_unsafe_file_tested": 6.533333333333337,
+            "avg_saved_costs": 431.3261436666666,
+            "avg_total_costs": 440.44019159999993,
+            "results": [
+                {
+                    "cost_from_safe_file": 97.202226,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 392.903176,
+                    "total_costs": 444.17638400000004
+                },
+                {
+                    "cost_from_safe_file": 96.360474,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 354.12532200000004,
+                    "total_costs": 414.98012600000004
+                },
+                {
+                    "cost_from_safe_file": 159.011299,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 247.45572099999998,
+                    "total_costs": 448.12998600000003
+                },
+                {
+                    "cost_from_safe_file": 235.50925500000002,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 374.678892,
+                    "total_costs": 467.39138799999995
+                },
+                {
+                    "cost_from_safe_file": 55.844523,
+                    "num_missed_safe_tests": 10,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 1,
+                    "num_unsafe_file_tested": 9,
+                    "saved_costs": 510.09599299999996,
+                    "total_costs": 370.81926699999997
+                },
+                {
+                    "cost_from_safe_file": 48.184564,
+                    "num_missed_safe_tests": 16,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 1,
+                    "num_unsafe_file_tested": 9,
+                    "saved_costs": 740.785015,
+                    "total_costs": 354.97933900000004
+                },
+                {
+                    "cost_from_safe_file": 162.305149,
+                    "num_missed_safe_tests": 4,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 197.29521499999998,
+                    "total_costs": 395.77806100000004
+                },
+                {
+                    "cost_from_safe_file": 216.31827900000002,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 252.14344100000002,
+                    "total_costs": 459.136915
+                },
+                {
+                    "cost_from_safe_file": 272.787647,
+                    "num_missed_safe_tests": 17,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 5,
+                    "saved_costs": 771.472699,
+                    "total_costs": 452.94283
+                },
+                {
+                    "cost_from_safe_file": 215.019168,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 394.352882,
+                    "total_costs": 449.002244
+                },
+                {
+                    "cost_from_safe_file": 161.290593,
+                    "num_missed_safe_tests": 10,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 507.49238299999996,
+                    "total_costs": 383.26695499999994
+                },
+                {
+                    "cost_from_safe_file": 225.983517,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 426.56519299999997,
+                    "total_costs": 493.99772700000005
+                },
+                {
+                    "cost_from_safe_file": 102.759651,
+                    "num_missed_safe_tests": 13,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 624.2001779999999,
+                    "total_costs": 414.7622620000001
+                },
+                {
+                    "cost_from_safe_file": 209.42523200000002,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 464.60627999999997,
+                    "total_costs": 457.6028
+                },
+                {
+                    "cost_from_safe_file": 155.225979,
+                    "num_missed_safe_tests": 10,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 488.847533,
+                    "total_costs": 429.99186000000003
+                },
+                {
+                    "cost_from_safe_file": 156.072212,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 333.559216,
+                    "total_costs": 448.77271600000006
+                },
+                {
+                    "cost_from_safe_file": 92.00258099999999,
+                    "num_missed_safe_tests": 3,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 145.756641,
+                    "total_costs": 396.058106
+                },
+                {
+                    "cost_from_safe_file": 274.50309100000004,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 5,
+                    "saved_costs": 405.173624,
+                    "total_costs": 436.86144900000005
+                },
+                {
+                    "cost_from_safe_file": 325.79992200000004,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 4,
+                    "saved_costs": 296.997371,
+                    "total_costs": 493.802075
+                },
+                {
+                    "cost_from_safe_file": 328.276784,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 4,
+                    "saved_costs": 362.28656199999995,
+                    "total_costs": 487.022301
+                },
+                {
+                    "cost_from_safe_file": 163.069341,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 554.5528410000001,
+                    "total_costs": 457.825152
+                },
+                {
+                    "cost_from_safe_file": 161.419116,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 242.85331000000002,
+                    "total_costs": 464.927079
+                },
+                {
+                    "cost_from_safe_file": 216.174863,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 335.913086,
+                    "total_costs": 470.06999500000006
+                },
+                {
+                    "cost_from_safe_file": 218.96929599999999,
+                    "num_missed_safe_tests": 12,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 557.2171390000001,
+                    "total_costs": 460.162958
+                },
+                {
+                    "cost_from_safe_file": 261.087579,
+                    "num_missed_safe_tests": 13,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 5,
+                    "saved_costs": 576.774671,
+                    "total_costs": 449.25291500000003
+                },
+                {
+                    "cost_from_safe_file": 208.236785,
+                    "num_missed_safe_tests": 10,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 508.257802,
+                    "total_costs": 437.894207
+                },
+                {
+                    "cost_from_safe_file": 158.32792799999999,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 288.96641800000003,
+                    "total_costs": 450.526868
+                },
+                {
+                    "cost_from_safe_file": 224.79882300000003,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 373.91351499999996,
+                    "total_costs": 417.69597600000003
+                },
+                {
+                    "cost_from_safe_file": 205.372614,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 7,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 465.29700699999995,
+                    "total_costs": 472.890946
+                },
+                {
+                    "cost_from_safe_file": 150.141396,
+                    "num_missed_safe_tests": 15,
+                    "num_missed_unsafe_tests": 10,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 745.245184,
+                    "total_costs": 432.484861
+                }
+            ]
+        },
+        "Logistic.model": {
+            "avg_cost_from_safe_file": 199.3572715666667,
+            "avg_num_missed_safe_tests": 5.500000000000001,
+            "avg_num_missed_unsafe_tests": 1.9000000000000008,
+            "avg_num_safe_file_tested": 3.866666666666667,
+            "avg_num_unsafe_file_tested": 6.133333333333335,
+            "avg_saved_costs": 267.6930958666666,
+            "avg_total_costs": 442.08298646666674,
+            "results": [
+                {
+                    "cost_from_safe_file": 151.849581,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 229.70174799999998,
+                    "total_costs": 414.93122
+                },
+                {
+                    "cost_from_safe_file": 267.22069400000004,
+                    "num_missed_safe_tests": 4,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 5,
+                    "saved_costs": 190.012649,
+                    "total_costs": 493.653103
+                },
+                {
+                    "cost_from_safe_file": 167.055693,
+                    "num_missed_safe_tests": 4,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 194.43111800000003,
+                    "total_costs": 447.769483
+                },
+                {
+                    "cost_from_safe_file": 223.874503,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 393.06017499999996,
+                    "total_costs": 445.531966
+                },
+                {
+                    "cost_from_safe_file": 100.020162,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 405.45701,
+                    "total_costs": 388.215517
+                },
+                {
+                    "cost_from_safe_file": 279.199553,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 4,
+                    "saved_costs": 243.319205,
+                    "total_costs": 463.93312
+                },
+                {
+                    "cost_from_safe_file": 81.063738,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 373.00742699999995,
+                    "total_costs": 424.561406
+                },
+                {
+                    "cost_from_safe_file": 280.463333,
+                    "num_missed_safe_tests": 3,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 5,
+                    "saved_costs": 155.408125,
+                    "total_costs": 492.40839300000005
+                },
+                {
+                    "cost_from_safe_file": 216.503645,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 308.23203,
+                    "total_costs": 449.066853
+                },
+                {
+                    "cost_from_safe_file": 159.670189,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 301.67240599999997,
+                    "total_costs": 406.85762700000004
+                },
+                {
+                    "cost_from_safe_file": 181.230979,
+                    "num_missed_safe_tests": 3,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 144.748767,
+                    "total_costs": 409.710617
+                },
+                {
+                    "cost_from_safe_file": 309.286506,
+                    "num_missed_safe_tests": 10,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 4,
+                    "saved_costs": 474.767428,
+                    "total_costs": 474.86735999999996
+                },
+                {
+                    "cost_from_safe_file": 101.112191,
+                    "num_missed_safe_tests": 4,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 191.763128,
+                    "total_costs": 434.545181
+                },
+                {
+                    "cost_from_safe_file": 182.436873,
+                    "num_missed_safe_tests": 13,
+                    "num_missed_unsafe_tests": 7,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 621.770728,
+                    "total_costs": 415.169149
+                },
+                {
+                    "cost_from_safe_file": 54.201868,
+                    "num_missed_safe_tests": 1,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 1,
+                    "num_unsafe_file_tested": 9,
+                    "saved_costs": 47.555406,
+                    "total_costs": 469.546107
+                },
+                {
+                    "cost_from_safe_file": 167.71038,
+                    "num_missed_safe_tests": 3,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 160.300839,
+                    "total_costs": 439.13221999999996
+                },
+                {
+                    "cost_from_safe_file": 165.018934,
+                    "num_missed_safe_tests": 4,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 203.368467,
+                    "total_costs": 412.58993699999996
+                },
+                {
+                    "cost_from_safe_file": 288.174862,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 4,
+                    "saved_costs": 304.973559,
+                    "total_costs": 436.52172099999996
+                },
+                {
+                    "cost_from_safe_file": 221.605059,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 330.917879,
+                    "total_costs": 436.03176499999995
+                },
+                {
+                    "cost_from_safe_file": 300.399236,
+                    "num_missed_safe_tests": 3,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 4,
+                    "saved_costs": 145.937504,
+                    "total_costs": 457.94762799999995
+                },
+                {
+                    "cost_from_safe_file": 206.810133,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 372.23756099999997,
+                    "total_costs": 438.993813
+                },
+                {
+                    "cost_from_safe_file": 168.815503,
+                    "num_missed_safe_tests": 3,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 152.054528,
+                    "total_costs": 462.295214
+                },
+                {
+                    "cost_from_safe_file": 207.409456,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 306.002782,
+                    "total_costs": 455.329332
+                },
+                {
+                    "cost_from_safe_file": 156.71832600000002,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 433.096551,
+                    "total_costs": 440.75514200000003
+                },
+                {
+                    "cost_from_safe_file": 399.96974,
+                    "num_missed_safe_tests": 4,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 8,
+                    "num_unsafe_file_tested": 2,
+                    "saved_costs": 202.195043,
+                    "total_costs": 498.3355470000001
+                },
+                {
+                    "cost_from_safe_file": 52.153195,
+                    "num_missed_safe_tests": 3,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 1,
+                    "num_unsafe_file_tested": 9,
+                    "saved_costs": 152.775083,
+                    "total_costs": 426.860936
+                },
+                {
+                    "cost_from_safe_file": 109.320891,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 286.04289900000003,
+                    "total_costs": 383.391663
+                },
+                {
+                    "cost_from_safe_file": 198.05256500000002,
+                    "num_missed_safe_tests": 2,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 90.56066899999999,
+                    "total_costs": 406.023852
+                },
+                {
+                    "cost_from_safe_file": 272.49343700000003,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 5,
+                    "saved_costs": 372.916514,
+                    "total_costs": 481.676418
+                },
+                {
+                    "cost_from_safe_file": 310.876922,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 4,
+                    "saved_costs": 242.505648,
+                    "total_costs": 455.837304
+                }
+            ]
+        },
+        "RandomForest.model": {
+            "avg_cost_from_safe_file": 186.8465528333333,
+            "avg_num_missed_safe_tests": 7.533333333333333,
+            "avg_num_missed_unsafe_tests": 2.1666666666666674,
+            "avg_num_safe_file_tested": 3.500000000000001,
+            "avg_num_unsafe_file_tested": 6.500000000000001,
+            "avg_saved_costs": 358.9609830333333,
+            "avg_total_costs": 448.8508217999999,
+            "results": [
+                {
+                    "cost_from_safe_file": 211.183199,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 287.347738,
+                    "total_costs": 476.574409
+                },
+                {
+                    "cost_from_safe_file": 162.800583,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 354.35414,
+                    "total_costs": 432.89808400000004
+                },
+                {
+                    "cost_from_safe_file": 220.34170699999999,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 407.059269,
+                    "total_costs": 456.1261630000001
+                },
+                {
+                    "cost_from_safe_file": 171.66808500000002,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 258.70784,
+                    "total_costs": 465.877645
+                },
+                {
+                    "cost_from_safe_file": 160.523643,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 385.614416,
+                    "total_costs": 462.30595500000004
+                },
+                {
+                    "cost_from_safe_file": 159.988403,
+                    "num_missed_safe_tests": 4,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 174.78322,
+                    "total_costs": 429.268239
+                },
+                {
+                    "cost_from_safe_file": 174.14704,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 255.97931599999998,
+                    "total_costs": 413.933139
+                },
+                {
+                    "cost_from_safe_file": 254.601765,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 5,
+                    "saved_costs": 355.955253,
+                    "total_costs": 459.98676
+                },
+                {
+                    "cost_from_safe_file": 221.41150800000003,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 442.2354720000001,
+                    "total_costs": 499.620859
+                },
+                {
+                    "cost_from_safe_file": 322.35150500000003,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 4,
+                    "saved_costs": 234.13117599999998,
+                    "total_costs": 457.923281
+                },
+                {
+                    "cost_from_safe_file": 326.611831,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 4,
+                    "saved_costs": 447.5116110000001,
+                    "total_costs": 504.87225
+                },
+                {
+                    "cost_from_safe_file": 225.993067,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 236.38824599999998,
+                    "total_costs": 456.387074
+                },
+                {
+                    "cost_from_safe_file": 147.407154,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 386.85809400000005,
+                    "total_costs": 434.77730399999996
+                },
+                {
+                    "cost_from_safe_file": 104.070358,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 338.114249,
+                    "total_costs": 428.251002
+                },
+                {
+                    "cost_from_safe_file": 118.115389,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 292.404973,
+                    "total_costs": 420.55147600000004
+                },
+                {
+                    "cost_from_safe_file": 271.207304,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 5,
+                    "saved_costs": 446.294401,
+                    "total_costs": 489.27038200000004
+                },
+                {
+                    "cost_from_safe_file": 165.566985,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 283.403125,
+                    "total_costs": 444.20438
+                },
+                {
+                    "cost_from_safe_file": 160.10947000000002,
+                    "num_missed_safe_tests": 14,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 662.4404440000001,
+                    "total_costs": 441.89978900000006
+                },
+                {
+                    "cost_from_safe_file": 140.468348,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 313.56918900000005,
+                    "total_costs": 450.41083499999996
+                },
+                {
+                    "cost_from_safe_file": 251.327973,
+                    "num_missed_safe_tests": 2,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 5,
+                    "saved_costs": 101.239732,
+                    "total_costs": 459.25906399999997
+                },
+                {
+                    "cost_from_safe_file": 175.970324,
+                    "num_missed_safe_tests": 12,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 553.710737,
+                    "total_costs": 453.49931399999997
+                },
+                {
+                    "cost_from_safe_file": 116.155646,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 275.11519499999997,
+                    "total_costs": 411.51443200000006
+                },
+                {
+                    "cost_from_safe_file": 163.093159,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 356.30851099999995,
+                    "total_costs": 436.597305
+                },
+                {
+                    "cost_from_safe_file": 200.664668,
+                    "num_missed_safe_tests": 15,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 718.9482320000001,
+                    "total_costs": 408.732913
+                },
+                {
+                    "cost_from_safe_file": 207.119181,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 448.8632640000001,
+                    "total_costs": 438.341506
+                },
+                {
+                    "cost_from_safe_file": 163.68550100000002,
+                    "num_missed_safe_tests": 4,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 171.56317,
+                    "total_costs": 436.04649000000006
+                },
+                {
+                    "cost_from_safe_file": 162.36086699999998,
+                    "num_missed_safe_tests": 10,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 484.6564320000001,
+                    "total_costs": 470.850551
+                },
+                {
+                    "cost_from_safe_file": 107.815692,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 8,
+                    "saved_costs": 297.575014,
+                    "total_costs": 441.863779
+                },
+                {
+                    "cost_from_safe_file": 142.67138,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 7,
+                    "saved_costs": 497.801312,
+                    "total_costs": 443.026744
+                },
+                {
+                    "cost_from_safe_file": 195.96484999999998,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 6,
+                    "saved_costs": 299.89572,
+                    "total_costs": 440.65352999999993
+                }
+            ]
+        }
+    },
+    "model_reach": {
+        "J48.model": {
+            "avg_cost_from_safe_file": 307.0453423333334,
+            "avg_num_missed_safe_tests": 14.266666666666664,
+            "avg_num_missed_unsafe_tests": 6.266666666666668,
+            "avg_num_safe_file_tested": 5.733333333333334,
+            "avg_num_unsafe_file_tested": 10.0,
+            "avg_saved_costs": 684.6159590666666,
+            "avg_total_costs": 692.9867912999999,
+            "results": [
+                {
+                    "cost_from_safe_file": 336.152344,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 542.997574,
+                    "total_costs": 711.686044
+                },
+                {
+                    "cost_from_safe_file": 179.980634,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 347.96588099999997,
+                    "total_costs": 569.308941
+                },
+                {
+                    "cost_from_safe_file": 116.155646,
+                    "num_missed_safe_tests": 13,
+                    "num_missed_unsafe_tests": 7,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 633.323173,
+                    "total_costs": 476.3950890000001
+                },
+                {
+                    "cost_from_safe_file": 224.037594,
+                    "num_missed_safe_tests": 18,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 879.040602,
+                    "total_costs": 621.4518330000001
+                },
+                {
+                    "cost_from_safe_file": 250.635107,
+                    "num_missed_safe_tests": 10,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 500.76300100000003,
+                    "total_costs": 655.059291
+                },
+                {
+                    "cost_from_safe_file": 325.451076,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 509.83455299999997,
+                    "total_costs": 714.933443
+                },
+                {
+                    "cost_from_safe_file": 429.78910799999994,
+                    "num_missed_safe_tests": 12,
+                    "num_missed_unsafe_tests": 7,
+                    "num_safe_file_tested": 8,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 516.8852459999999,
+                    "total_costs": 833.7637830000001
+                },
+                {
+                    "cost_from_safe_file": 156.42605700000001,
+                    "num_missed_safe_tests": 18,
+                    "num_missed_unsafe_tests": 7,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 834.8072440000001,
+                    "total_costs": 521.203034
+                },
+                {
+                    "cost_from_safe_file": 192.25305400000002,
+                    "num_missed_safe_tests": 18,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 872.493453,
+                    "total_costs": 613.177046
+                },
+                {
+                    "cost_from_safe_file": 485.039058,
+                    "num_missed_safe_tests": 25,
+                    "num_missed_unsafe_tests": 9,
+                    "num_safe_file_tested": 9,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 1213.5674429999995,
+                    "total_costs": 876.3210369999999
+                },
+                {
+                    "cost_from_safe_file": 583.8198429999999,
+                    "num_missed_safe_tests": 18,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 11,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 844.7609580000001,
+                    "total_costs": 968.097349
+                },
+                {
+                    "cost_from_safe_file": 311.59949299999994,
+                    "num_missed_safe_tests": 15,
+                    "num_missed_unsafe_tests": 8,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 769.8525639999999,
+                    "total_costs": 705.763282
+                },
+                {
+                    "cost_from_safe_file": 545.979708,
+                    "num_missed_safe_tests": 21,
+                    "num_missed_unsafe_tests": 9,
+                    "num_safe_file_tested": 10,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 1016.725402,
+                    "total_costs": 929.257011
+                },
+                {
+                    "cost_from_safe_file": 112.390729,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 7,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 433.22394699999995,
+                    "total_costs": 485.878231
+                },
+                {
+                    "cost_from_safe_file": 600.54664,
+                    "num_missed_safe_tests": 16,
+                    "num_missed_unsafe_tests": 7,
+                    "num_safe_file_tested": 11,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 766.984686,
+                    "total_costs": 1006.301187
+                },
+                {
+                    "cost_from_safe_file": 268.859214,
+                    "num_missed_safe_tests": 15,
+                    "num_missed_unsafe_tests": 9,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 735.0061800000001,
+                    "total_costs": 649.292658
+                },
+                {
+                    "cost_from_safe_file": 150.909787,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 416.391451,
+                    "total_costs": 523.298283
+                },
+                {
+                    "cost_from_safe_file": 213.12194399999998,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 408.616145,
+                    "total_costs": 604.5534360000001
+                },
+                {
+                    "cost_from_safe_file": 101.40728100000001,
+                    "num_missed_safe_tests": 18,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 878.579634,
+                    "total_costs": 464.86949699999997
+                },
+                {
+                    "cost_from_safe_file": 319.97482,
+                    "num_missed_safe_tests": 19,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 919.661865,
+                    "total_costs": 708.4474720000001
+                },
+                {
+                    "cost_from_safe_file": 226.458234,
+                    "num_missed_safe_tests": 16,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 771.993019,
+                    "total_costs": 612.9649280000001
+                },
+                {
+                    "cost_from_safe_file": 203.764919,
+                    "num_missed_safe_tests": 12,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 575.5827949999999,
+                    "total_costs": 582.1821460000001
+                },
+                {
+                    "cost_from_safe_file": 171.03643399999999,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 8,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 322.97118,
+                    "total_costs": 567.973375
+                },
+                {
+                    "cost_from_safe_file": 586.781673,
+                    "num_missed_safe_tests": 21,
+                    "num_missed_unsafe_tests": 7,
+                    "num_safe_file_tested": 11,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 983.1428730000001,
+                    "total_costs": 966.3886860000001
+                },
+                {
+                    "cost_from_safe_file": 300.720818,
+                    "num_missed_safe_tests": 19,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 892.2959169999999,
+                    "total_costs": 711.7957719999999
+                },
+                {
+                    "cost_from_safe_file": 253.08689999999999,
+                    "num_missed_safe_tests": 14,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 668.340926,
+                    "total_costs": 654.8060310000001
+                },
+                {
+                    "cost_from_safe_file": 489.20707699999997,
+                    "num_missed_safe_tests": 14,
+                    "num_missed_unsafe_tests": 7,
+                    "num_safe_file_tested": 9,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 642.3333819999999,
+                    "total_costs": 870.1800120000001
+                },
+                {
+                    "cost_from_safe_file": 474.79482099999996,
+                    "num_missed_safe_tests": 15,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 9,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 741.1524869999998,
+                    "total_costs": 855.5008170000001
+                },
+                {
+                    "cost_from_safe_file": 378.579516,
+                    "num_missed_safe_tests": 12,
+                    "num_missed_unsafe_tests": 9,
+                    "num_safe_file_tested": 7,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 559.938154,
+                    "total_costs": 725.1956890000001
+                },
+                {
+                    "cost_from_safe_file": 222.40074099999998,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 339.247037,
+                    "total_costs": 603.558336
+                }
+            ]
+        },
+        "Logistic.model": {
+            "avg_cost_from_safe_file": 323.7419838666667,
+            "avg_num_missed_safe_tests": 8.933333333333334,
+            "avg_num_missed_unsafe_tests": 3.3333333333333353,
+            "avg_num_safe_file_tested": 6.366666666666668,
+            "avg_num_unsafe_file_tested": 10.0,
+            "avg_saved_costs": 431.7905405333334,
+            "avg_total_costs": 712.2228086333333,
+            "results": [
+                {
+                    "cost_from_safe_file": 623.510494,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 12,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 510.1583339999999,
+                    "total_costs": 1022.620687
+                },
+                {
+                    "cost_from_safe_file": 355.055773,
+                    "num_missed_safe_tests": 13,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 8,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 595.495148,
+                    "total_costs": 734.8280619999999
+                },
+                {
+                    "cost_from_safe_file": 428.025852,
+                    "num_missed_safe_tests": 19,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 9,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 915.7779209999999,
+                    "total_costs": 803.30827
+                },
+                {
+                    "cost_from_safe_file": 152.794169,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 237.533339,
+                    "total_costs": 580.384464
+                },
+                {
+                    "cost_from_safe_file": 268.392101,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 352.14930300000003,
+                    "total_costs": 639.5979159999999
+                },
+                {
+                    "cost_from_safe_file": 578.4220429999999,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 11,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 526.969732,
+                    "total_costs": 943.5173779999998
+                },
+                {
+                    "cost_from_safe_file": 322.181465,
+                    "num_missed_safe_tests": 16,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 790.40756,
+                    "total_costs": 679.550532
+                },
+                {
+                    "cost_from_safe_file": 467.60992400000003,
+                    "num_missed_safe_tests": 12,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 9,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 592.708922,
+                    "total_costs": 846.7585329999999
+                },
+                {
+                    "cost_from_safe_file": 110.58851,
+                    "num_missed_safe_tests": 4,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 199.62137,
+                    "total_costs": 512.9797920000001
+                },
+                {
+                    "cost_from_safe_file": 240.211423,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 511.56188499999996,
+                    "total_costs": 618.017093
+                },
+                {
+                    "cost_from_safe_file": 587.8987979999999,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 12,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 434.55022399999996,
+                    "total_costs": 962.2097879999998
+                },
+                {
+                    "cost_from_safe_file": 488.266165,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 9,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 431.138659,
+                    "total_costs": 853.3008729999999
+                },
+                {
+                    "cost_from_safe_file": 217.543938,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 515.8427369999999,
+                    "total_costs": 626.856169
+                },
+                {
+                    "cost_from_safe_file": 332.463905,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 7,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 406.819303,
+                    "total_costs": 731.2432709999998
+                },
+                {
+                    "cost_from_safe_file": 109.320891,
+                    "num_missed_safe_tests": 4,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 191.081557,
+                    "total_costs": 516.496726
+                },
+                {
+                    "cost_from_safe_file": 492.522864,
+                    "num_missed_safe_tests": 13,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 9,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 635.5510810000001,
+                    "total_costs": 873.8414389999999
+                },
+                {
+                    "cost_from_safe_file": 232.57450999999998,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 331.21339,
+                    "total_costs": 589.795061
+                },
+                {
+                    "cost_from_safe_file": 501.13264200000003,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 10,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 512.083684,
+                    "total_costs": 867.3637170000001
+                },
+                {
+                    "cost_from_safe_file": 316.740672,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 299.99926000000005,
+                    "total_costs": 725.8161179999998
+                },
+                {
+                    "cost_from_safe_file": 262.122459,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 438.22398,
+                    "total_costs": 676.9412270000001
+                },
+                {
+                    "cost_from_safe_file": 152.566992,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 418.514869,
+                    "total_costs": 543.7970160000001
+                },
+                {
+                    "cost_from_safe_file": 208.914604,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 249.78313199999997,
+                    "total_costs": 597.172703
+                },
+                {
+                    "cost_from_safe_file": 302.07059200000003,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 7,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 342.664428,
+                    "total_costs": 708.194814
+                },
+                {
+                    "cost_from_safe_file": 213.51178099999998,
+                    "num_missed_safe_tests": 10,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 493.715078,
+                    "total_costs": 594.035435
+                },
+                {
+                    "cost_from_safe_file": 268.388292,
+                    "num_missed_safe_tests": 3,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 154.3408,
+                    "total_costs": 641.6033209999999
+                },
+                {
+                    "cost_from_safe_file": 302.422597,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 7,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 404.85881,
+                    "total_costs": 733.7606999999999
+                },
+                {
+                    "cost_from_safe_file": 214.25468400000003,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 264.15436100000005,
+                    "total_costs": 606.385296
+                },
+                {
+                    "cost_from_safe_file": 158.325138,
+                    "num_missed_safe_tests": 4,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 192.127529,
+                    "total_costs": 498.788978
+                },
+                {
+                    "cost_from_safe_file": 209.623274,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 379.234044,
+                    "total_costs": 632.878349
+                },
+                {
+                    "cost_from_safe_file": 594.802964,
+                    "num_missed_safe_tests": 12,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 11,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 625.435776,
+                    "total_costs": 1004.6405309999999
+                }
+            ]
+        },
+        "RandomForest.model": {
+            "avg_cost_from_safe_file": 271.55405709999997,
+            "avg_num_missed_safe_tests": 10.366666666666667,
+            "avg_num_missed_unsafe_tests": 3.166666666666667,
+            "avg_num_safe_file_tested": 5.133333333333333,
+            "avg_num_unsafe_file_tested": 10.0,
+            "avg_saved_costs": 490.309317,
+            "avg_total_costs": 674.4097097666665,
+            "results": [
+                {
+                    "cost_from_safe_file": 349.889429,
+                    "num_missed_safe_tests": 10,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 7,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 504.654591,
+                    "total_costs": 764.9189809999999
+                },
+                {
+                    "cost_from_safe_file": 152.921513,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 300.62489000000005,
+                    "total_costs": 562.951512
+                },
+                {
+                    "cost_from_safe_file": 418.772657,
+                    "num_missed_safe_tests": 16,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 8,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 690.504517,
+                    "total_costs": 776.817659
+                },
+                {
+                    "cost_from_safe_file": 578.6725429999999,
+                    "num_missed_safe_tests": 16,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 11,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 794.6087369999998,
+                    "total_costs": 968.3182089999999
+                },
+                {
+                    "cost_from_safe_file": 223.446972,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 415.755896,
+                    "total_costs": 583.0656970000001
+                },
+                {
+                    "cost_from_safe_file": 387.181792,
+                    "num_missed_safe_tests": 13,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 7,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 630.1803809999999,
+                    "total_costs": 779.004762
+                },
+                {
+                    "cost_from_safe_file": 334.142578,
+                    "num_missed_safe_tests": 12,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 563.5359410000001,
+                    "total_costs": 735.0993440000001
+                },
+                {
+                    "cost_from_safe_file": 319.4614710000001,
+                    "num_missed_safe_tests": 16,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 6,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 783.4091119999999,
+                    "total_costs": 742.6134569999999
+                },
+                {
+                    "cost_from_safe_file": 380.557975,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 7,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 372.81284400000004,
+                    "total_costs": 780.7023259999999
+                },
+                {
+                    "cost_from_safe_file": 148.537537,
+                    "num_missed_safe_tests": 8,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 367.090016,
+                    "total_costs": 559.2520420000001
+                },
+                {
+                    "cost_from_safe_file": 249.688003,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 526.929697,
+                    "total_costs": 611.730143
+                },
+                {
+                    "cost_from_safe_file": 157.824236,
+                    "num_missed_safe_tests": 2,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 83.660112,
+                    "total_costs": 580.658476
+                },
+                {
+                    "cost_from_safe_file": 162.015494,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 396.344598,
+                    "total_costs": 552.6142219999999
+                },
+                {
+                    "cost_from_safe_file": 266.820915,
+                    "num_missed_safe_tests": 12,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 5,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 600.8080160000001,
+                    "total_costs": 674.0334159999999
+                },
+                {
+                    "cost_from_safe_file": 153.911364,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 239.06717899999998,
+                    "total_costs": 566.3586799999999
+                },
+                {
+                    "cost_from_safe_file": 735.7672140000001,
+                    "num_missed_safe_tests": 15,
+                    "num_missed_unsafe_tests": 10,
+                    "num_safe_file_tested": 14,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 710.9522289999999,
+                    "total_costs": 1159.0197560000004
+                },
+                {
+                    "cost_from_safe_file": 101.842793,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 444.315891,
+                    "total_costs": 550.528933
+                },
+                {
+                    "cost_from_safe_file": 365.259058,
+                    "num_missed_safe_tests": 12,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 7,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 577.453016,
+                    "total_costs": 746.492844
+                },
+                {
+                    "cost_from_safe_file": 378.595282,
+                    "num_missed_safe_tests": 14,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 7,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 671.2969720000002,
+                    "total_costs": 739.879516
+                },
+                {
+                    "cost_from_safe_file": 105.11483,
+                    "num_missed_safe_tests": 6,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 267.016437,
+                    "total_costs": 497.681599
+                },
+                {
+                    "cost_from_safe_file": 214.224859,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 520.086315,
+                    "total_costs": 664.7278369999999
+                },
+                {
+                    "cost_from_safe_file": 365.397465,
+                    "num_missed_safe_tests": 21,
+                    "num_missed_unsafe_tests": 5,
+                    "num_safe_file_tested": 7,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 1018.1675130000001,
+                    "total_costs": 762.9716780000001
+                },
+                {
+                    "cost_from_safe_file": 52.902757,
+                    "num_missed_safe_tests": 10,
+                    "num_missed_unsafe_tests": 2,
+                    "num_safe_file_tested": 1,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 494.3796910000001,
+                    "total_costs": 458.84793500000006
+                },
+                {
+                    "cost_from_safe_file": 52.153195,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 1,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 423.27901699999995,
+                    "total_costs": 460.39121200000005
+                },
+                {
+                    "cost_from_safe_file": 100.803881,
+                    "num_missed_safe_tests": 5,
+                    "num_missed_unsafe_tests": 0,
+                    "num_safe_file_tested": 2,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 221.99202699999998,
+                    "total_costs": 482.50858200000005
+                },
+                {
+                    "cost_from_safe_file": 176.382591,
+                    "num_missed_safe_tests": 2,
+                    "num_missed_unsafe_tests": 1,
+                    "num_safe_file_tested": 3,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 104.04165900000001,
+                    "total_costs": 602.389365
+                },
+                {
+                    "cost_from_safe_file": 195.46544699999998,
+                    "num_missed_safe_tests": 7,
+                    "num_missed_unsafe_tests": 3,
+                    "num_safe_file_tested": 4,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 313.516145,
+                    "total_costs": 607.4578240000001
+                },
+                {
+                    "cost_from_safe_file": 478.877757,
+                    "num_missed_safe_tests": 16,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 9,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 744.0369369999999,
+                    "total_costs": 851.6830810000001
+                },
+                {
+                    "cost_from_safe_file": 52.153195,
+                    "num_missed_safe_tests": 9,
+                    "num_missed_unsafe_tests": 6,
+                    "num_safe_file_tested": 1,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 404.632916,
+                    "total_costs": 470.994567
+                },
+                {
+                    "cost_from_safe_file": 487.83690999999993,
+                    "num_missed_safe_tests": 11,
+                    "num_missed_unsafe_tests": 4,
+                    "num_safe_file_tested": 9,
+                    "num_unsafe_file_tested": 10,
+                    "saved_costs": 524.126218,
+                    "total_costs": 938.5776380000001
+                }
+            ]
+        }
+    },
+    "random_fix": {
+        "avg_cost_safe": 286.82385,
+        "avg_cost_unsafe": 160.66647819999997,
+        "avg_num_safe": 5.866666666666669,
+        "avg_num_tests": 10.0,
+        "avg_num_unsafe": 4.133333333333334,
+        "avg_total_cost": 447.4903281999999,
+        "results": [
+            {
+                "cost_safe": 166.657373,
+                "cost_unsafe": 253.87461599999997,
+                "num_safe": 3,
+                "num_tests": 10,
+                "num_unsafe": 7,
+                "total_cost": 420.53198899999995
+            },
+            {
+                "cost_safe": 216.214092,
+                "cost_unsafe": 166.69745,
+                "num_safe": 5,
+                "num_tests": 10,
+                "num_unsafe": 5,
+                "total_cost": 382.91154200000005
+            },
+            {
+                "cost_safe": 333.266767,
+                "cost_unsafe": 108.95701199999999,
+                "num_safe": 7,
+                "num_tests": 10,
+                "num_unsafe": 3,
+                "total_cost": 442.223779
+            },
+            {
+                "cost_safe": 294.18347299999994,
+                "cost_unsafe": 153.71273100000002,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 447.89620399999995
+            },
+            {
+                "cost_safe": 325.930722,
+                "cost_unsafe": 140.825442,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 466.756164
+            },
+            {
+                "cost_safe": 359.4405560000001,
+                "cost_unsafe": 79.371453,
+                "num_safe": 8,
+                "num_tests": 10,
+                "num_unsafe": 2,
+                "total_cost": 438.81200900000005
+            },
+            {
+                "cost_safe": 307.99555899999996,
+                "cost_unsafe": 153.869362,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 461.864921
+            },
+            {
+                "cost_safe": 284.11295,
+                "cost_unsafe": 175.888771,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 460.00172100000003
+            },
+            {
+                "cost_safe": 292.192546,
+                "cost_unsafe": 162.007657,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 454.200203
+            },
+            {
+                "cost_safe": 253.376086,
+                "cost_unsafe": 169.020777,
+                "num_safe": 5,
+                "num_tests": 10,
+                "num_unsafe": 5,
+                "total_cost": 422.39686300000005
+            },
+            {
+                "cost_safe": 294.17301299999997,
+                "cost_unsafe": 159.22514199999998,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 453.39815500000003
+            },
+            {
+                "cost_safe": 341.173226,
+                "cost_unsafe": 129.89327600000001,
+                "num_safe": 7,
+                "num_tests": 10,
+                "num_unsafe": 3,
+                "total_cost": 471.066502
+            },
+            {
+                "cost_safe": 222.78897899999998,
+                "cost_unsafe": 225.292443,
+                "num_safe": 5,
+                "num_tests": 10,
+                "num_unsafe": 5,
+                "total_cost": 448.081422
+            },
+            {
+                "cost_safe": 196.959452,
+                "cost_unsafe": 241.587303,
+                "num_safe": 4,
+                "num_tests": 10,
+                "num_unsafe": 6,
+                "total_cost": 438.546755
+            },
+            {
+                "cost_safe": 202.87569100000002,
+                "cost_unsafe": 247.377601,
+                "num_safe": 4,
+                "num_tests": 10,
+                "num_unsafe": 6,
+                "total_cost": 450.25329199999993
+            },
+            {
+                "cost_safe": 404.296628,
+                "cost_unsafe": 83.668413,
+                "num_safe": 8,
+                "num_tests": 10,
+                "num_unsafe": 2,
+                "total_cost": 487.965041
+            },
+            {
+                "cost_safe": 405.96692399999995,
+                "cost_unsafe": 72.816771,
+                "num_safe": 8,
+                "num_tests": 10,
+                "num_unsafe": 2,
+                "total_cost": 478.78369499999997
+            },
+            {
+                "cost_safe": 363.771269,
+                "cost_unsafe": 112.03749900000001,
+                "num_safe": 7,
+                "num_tests": 10,
+                "num_unsafe": 3,
+                "total_cost": 475.80876800000004
+            },
+            {
+                "cost_safe": 296.848266,
+                "cost_unsafe": 159.536373,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 456.384639
+            },
+            {
+                "cost_safe": 315.777216,
+                "cost_unsafe": 152.157612,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 467.93482800000004
+            },
+            {
+                "cost_safe": 240.21596900000003,
+                "cost_unsafe": 200.06038800000002,
+                "num_safe": 5,
+                "num_tests": 10,
+                "num_unsafe": 5,
+                "total_cost": 440.276357
+            },
+            {
+                "cost_safe": 285.832054,
+                "cost_unsafe": 162.020117,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 447.852171
+            },
+            {
+                "cost_safe": 333.10465300000004,
+                "cost_unsafe": 136.897363,
+                "num_safe": 7,
+                "num_tests": 10,
+                "num_unsafe": 3,
+                "total_cost": 470.002016
+            },
+            {
+                "cost_safe": 261.036357,
+                "cost_unsafe": 148.321517,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 409.357874
+            },
+            {
+                "cost_safe": 318.08672,
+                "cost_unsafe": 141.622968,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 459.70968799999997
+            },
+            {
+                "cost_safe": 256.505859,
+                "cost_unsafe": 153.474855,
+                "num_safe": 5,
+                "num_tests": 10,
+                "num_unsafe": 5,
+                "total_cost": 409.98071400000003
+            },
+            {
+                "cost_safe": 203.139924,
+                "cost_unsafe": 197.461794,
+                "num_safe": 4,
+                "num_tests": 10,
+                "num_unsafe": 6,
+                "total_cost": 400.601718
+            },
+            {
+                "cost_safe": 253.672482,
+                "cost_unsafe": 157.579394,
+                "num_safe": 6,
+                "num_tests": 10,
+                "num_unsafe": 4,
+                "total_cost": 411.25187600000004
+            },
+            {
+                "cost_safe": 377.710281,
+                "cost_unsafe": 77.656632,
+                "num_safe": 8,
+                "num_tests": 10,
+                "num_unsafe": 2,
+                "total_cost": 455.36691299999995
+            },
+            {
+                "cost_safe": 197.410413,
+                "cost_unsafe": 297.081614,
+                "num_safe": 4,
+                "num_tests": 10,
+                "num_unsafe": 6,
+                "total_cost": 494.492027
+            }
+        ]
+    },
+    "random_reach": {
+        "avg_cost_safe": 583.5641636333334,
+        "avg_cost_unsafe": 392.91920466666664,
+        "avg_num_safe": 11.833333333333336,
+        "avg_num_tests": 21.833333333333332,
+        "avg_num_unsafe": 10.0,
+        "avg_total_cost": 976.4833683000002,
+        "results": [
+            {
+                "cost_safe": 1225.6871389999997,
+                "cost_unsafe": 380.960018,
+                "num_safe": 25,
+                "num_tests": 35,
+                "num_unsafe": 10,
+                "total_cost": 1606.6471569999999
+            },
+            {
+                "cost_safe": 312.279945,
+                "cost_unsafe": 370.324736,
+                "num_safe": 7,
+                "num_tests": 17,
+                "num_unsafe": 10,
+                "total_cost": 682.604681
+            },
+            {
+                "cost_safe": 569.2455809999999,
+                "cost_unsafe": 411.342526,
+                "num_safe": 11,
+                "num_tests": 21,
+                "num_unsafe": 10,
+                "total_cost": 980.5881069999998
+            },
+            {
+                "cost_safe": 557.655584,
+                "cost_unsafe": 440.09361599999994,
+                "num_safe": 11,
+                "num_tests": 21,
+                "num_unsafe": 10,
+                "total_cost": 997.7492000000001
+            },
+            {
+                "cost_safe": 807.658216,
+                "cost_unsafe": 363.717077,
+                "num_safe": 16,
+                "num_tests": 26,
+                "num_unsafe": 10,
+                "total_cost": 1171.375293
+            },
+            {
+                "cost_safe": 467.229685,
+                "cost_unsafe": 406.116034,
+                "num_safe": 10,
+                "num_tests": 20,
+                "num_unsafe": 10,
+                "total_cost": 873.3457189999999
+            },
+            {
+                "cost_safe": 584.5507460000001,
+                "cost_unsafe": 425.198282,
+                "num_safe": 12,
+                "num_tests": 22,
+                "num_unsafe": 10,
+                "total_cost": 1009.7490280000001
+            },
+            {
+                "cost_safe": 339.21845799999994,
+                "cost_unsafe": 409.711264,
+                "num_safe": 7,
+                "num_tests": 17,
+                "num_unsafe": 10,
+                "total_cost": 748.9297219999999
+            },
+            {
+                "cost_safe": 274.539093,
+                "cost_unsafe": 383.74890700000003,
+                "num_safe": 5,
+                "num_tests": 15,
+                "num_unsafe": 10,
+                "total_cost": 658.288
+            },
+            {
+                "cost_safe": 390.428182,
+                "cost_unsafe": 360.778894,
+                "num_safe": 8,
+                "num_tests": 18,
+                "num_unsafe": 10,
+                "total_cost": 751.207076
+            },
+            {
+                "cost_safe": 754.6038830000001,
+                "cost_unsafe": 405.32423000000006,
+                "num_safe": 15,
+                "num_tests": 25,
+                "num_unsafe": 10,
+                "total_cost": 1159.9281130000002
+            },
+            {
+                "cost_safe": 279.45167599999996,
+                "cost_unsafe": 406.9990710000001,
+                "num_safe": 6,
+                "num_tests": 16,
+                "num_unsafe": 10,
+                "total_cost": 686.4507470000001
+            },
+            {
+                "cost_safe": 562.462785,
+                "cost_unsafe": 386.74804700000004,
+                "num_safe": 11,
+                "num_tests": 21,
+                "num_unsafe": 10,
+                "total_cost": 949.2108320000002
+            },
+            {
+                "cost_safe": 525.380118,
+                "cost_unsafe": 399.28474200000005,
+                "num_safe": 11,
+                "num_tests": 21,
+                "num_unsafe": 10,
+                "total_cost": 924.6648599999999
+            },
+            {
+                "cost_safe": 762.976269,
+                "cost_unsafe": 421.488651,
+                "num_safe": 15,
+                "num_tests": 25,
+                "num_unsafe": 10,
+                "total_cost": 1184.46492
+            },
+            {
+                "cost_safe": 609.8898419999999,
+                "cost_unsafe": 415.845747,
+                "num_safe": 12,
+                "num_tests": 22,
+                "num_unsafe": 10,
+                "total_cost": 1025.735589
+            },
+            {
+                "cost_safe": 889.789903,
+                "cost_unsafe": 378.81671,
+                "num_safe": 18,
+                "num_tests": 28,
+                "num_unsafe": 10,
+                "total_cost": 1268.606613
+            },
+            {
+                "cost_safe": 929.4587230000001,
+                "cost_unsafe": 380.656338,
+                "num_safe": 19,
+                "num_tests": 29,
+                "num_unsafe": 10,
+                "total_cost": 1310.115061
+            },
+            {
+                "cost_safe": 476.725298,
+                "cost_unsafe": 392.77935799999995,
+                "num_safe": 9,
+                "num_tests": 19,
+                "num_unsafe": 10,
+                "total_cost": 869.504656
+            },
+            {
+                "cost_safe": 880.9028539999999,
+                "cost_unsafe": 359.642397,
+                "num_safe": 18,
+                "num_tests": 28,
+                "num_unsafe": 10,
+                "total_cost": 1240.545251
+            },
+            {
+                "cost_safe": 716.3978289999999,
+                "cost_unsafe": 397.58418300000005,
+                "num_safe": 14,
+                "num_tests": 24,
+                "num_unsafe": 10,
+                "total_cost": 1113.9820120000002
+            },
+            {
+                "cost_safe": 444.941384,
+                "cost_unsafe": 354.43643699999996,
+                "num_safe": 9,
+                "num_tests": 19,
+                "num_unsafe": 10,
+                "total_cost": 799.3778210000002
+            },
+            {
+                "cost_safe": 182.395864,
+                "cost_unsafe": 374.310721,
+                "num_safe": 4,
+                "num_tests": 14,
+                "num_unsafe": 10,
+                "total_cost": 556.7065849999999
+            },
+            {
+                "cost_safe": 656.712667,
+                "cost_unsafe": 379.72965400000004,
+                "num_safe": 14,
+                "num_tests": 24,
+                "num_unsafe": 10,
+                "total_cost": 1036.4423209999998
+            },
+            {
+                "cost_safe": 563.110987,
+                "cost_unsafe": 390.68680500000005,
+                "num_safe": 11,
+                "num_tests": 21,
+                "num_unsafe": 10,
+                "total_cost": 953.7977920000001
+            },
+            {
+                "cost_safe": 645.9487229999999,
+                "cost_unsafe": 387.33871200000004,
+                "num_safe": 13,
+                "num_tests": 23,
+                "num_unsafe": 10,
+                "total_cost": 1033.2874349999997
+            },
+            {
+                "cost_safe": 582.475498,
+                "cost_unsafe": 378.64191700000003,
+                "num_safe": 11,
+                "num_tests": 21,
+                "num_unsafe": 10,
+                "total_cost": 961.117415
+            },
+            {
+                "cost_safe": 607.214706,
+                "cost_unsafe": 395.876832,
+                "num_safe": 12,
+                "num_tests": 22,
+                "num_unsafe": 10,
+                "total_cost": 1003.0915380000001
+            },
+            {
+                "cost_safe": 592.0191750000001,
+                "cost_unsafe": 411.1848650000001,
+                "num_safe": 13,
+                "num_tests": 23,
+                "num_unsafe": 10,
+                "total_cost": 1003.2040400000001
+            },
+            {
+                "cost_safe": 315.574096,
+                "cost_unsafe": 418.2093689999999,
+                "num_safe": 8,
+                "num_tests": 18,
+                "num_unsafe": 10,
+                "total_cost": 733.7834650000001
+            }
+        ]
+    }
+}

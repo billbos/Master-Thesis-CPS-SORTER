@@ -1,0 +1,1 @@
+{"generated_tests": 720, "tested_files": 406, "unsafe_cases": 264, "safe_cases": 141, "predicated_as_safe": 310, "time_test_generation": 1392.3663279999998, "time_predictions": 13.919473, "time_test_run": 19961.330293000006, "time_spent_unsafe": 11423.657959999993, "time_spent_safe": 8131.972986000002}
